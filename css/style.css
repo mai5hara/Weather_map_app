@@ -1,0 +1,121 @@
+body {
+    background-color: #ecf6ff;  
+    font-family: 'Montserrat', sans-serif;  
+    margin: 0;
+    padding: 0;
+}
+
+.weaser_map {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.bg_img {
+    width: 80%;
+    height: 100vh;
+}
+
+.weather_map_wrap {
+    background-color: hsl(0, 0%, 100%, 0.5);
+    width: 20%;
+    padding: 2rem 1.5rem;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+h1,div,p {
+    margin: 0;
+    padding: 0; 
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#search_city_name {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    background-color: rgb(255, 128, 25);
+    border-radius: 30px;
+    width: 60%;
+    color: #fff;
+    margin: 1rem auto;
+    padding: 0.4rem 0.7rem;
+    font-weight: 500;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+#city_name {
+    width: 8rem;
+    font-size: 1rem;
+    padding: 0 0.4rem;
+    border: 2px solid rgb(255, 128, 25);
+    border-radius: 3px;
+}
+
+#search_btn {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-left: 0.5rem;
+    border-radius: 3px;
+    background-color: rgb(255, 128, 25);
+    cursor: pointer;
+}
+
+.fas {
+    display: block;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.search_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+#output_weather {
+    margin-top: 0.5rem;
+}
+
+.weather_detail {
+    font-size: 1.3rem;
+    border-bottom: 1px solid #2c2c2c;
+    width: 40%;
+    padding-bottom: 0.3rem;
+    margin: 0 auto 0.5rem auto;
+}
+
+#sunny, #cloud, #rain, #snow, #undefind {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 478px) {
+
+    .weaser_map {
+        background: url(../imgs/earth.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .bg_img {
+        display: none;
+    }
+
+    .weather_map_wrap {
+        width: 100%;
+    }
+
+}

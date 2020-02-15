@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0020439f70.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"></link>
+    <title>Wether Map</title>
+</head>
+<body>
+    <div class="weaser_map">
+        <img class="bg_img" src="imgs/bg_img.jpg">
+        <div class="weather_map_wrap">
+            <h1>WEATHER MAP</h1>
+            <p id="search_city_name"></p>
+            <div id="weather_img">
+                <img id="sunny" src="imgs/sunny.svg">
+                <img id="rain" src="imgs/rain.svg">
+                <img id="cloud" src="imgs/cloud.svg">
+                <img id="snow" src="imgs/snow.svg">
+                <img id="undefind" src="imgs/undefind.svg">
+            </div>
+            <div id="output_weather">
+                <p class="weather_detail" id="weather"></p>
+                <p class="weather_detail" id="temp_celsius"></p>
+                <p class="weather_detail" id="temp_fahrenheit"></p>
+            </div>
+            <div class="search_box">
+                <input id="city_name" type="text">
+                <div id="search_btn" value="search"><i class="fas fa-search"></i></div>
+                <!-- <input id="search_btn" type="button"  value="search"> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
