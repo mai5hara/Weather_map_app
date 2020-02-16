@@ -1,4 +1,4 @@
-const API_KEY = 'ad32e5732727ae27e9f2c3a1ecd95b69';
+const API_KEY = process.env.REACT_APP_APIKey;
 const searchBtn = document.getElementById('search_btn');
 const weatherImg = document.getElementById('weather_img');
 let getCityName = document.getElementById('city_name');
@@ -12,6 +12,34 @@ rain.style.display = 'none';
 cloud.style.display = 'none';
 snow.style.display = 'none';
 undefind.style.display = 'none';
+
+// getCurrentLocation = () => {
+
+//     successFunc = (position) => {
+//         alert(position.coords.latitude);
+//         alert(position.coords.longitude);
+//     }
+
+//     errFunc = (error) => {
+//         const errorMessage = {
+//             0: 'An unknown error has occurred',
+//             1: 'Your location acquisition was not allowed',
+//             2: 'Location information could not be obtained due to signal conditions',
+//             3: 'Location acquisition took too long and timed out'
+//         };
+//         alert(errorMessage[error.code]);
+//     }
+
+//     const optionObj = {
+//         "enableHighAccuracy": false ,
+//         "timeout": 8000 ,
+//         "maximumAge": 5000 ,
+//     };
+
+//     navigator.geolocation.getCurrentPosition( successFunc , errorFunc , optionObj );
+// }
+
+// getCurrentLocation();
 
 window.onload = () => {
     let getCityName = document.getElementById('city_name');
